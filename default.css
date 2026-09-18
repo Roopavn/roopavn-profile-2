@@ -446,5 +446,118 @@ h6 { font-size: 16px;}
 
 }
 
+/* ---- Experience ---- */
+.exp-item{
+	border:1px solid var(--borderColor);
+	border-radius:5px;
+	padding:20px 25px;
+	margin-bottom:20px;
+	background-color: var(--secondaryColor);
+
+	-webkit-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.35);
+	-moz-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.35);
+	box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.35);
+}
+
+.exp-head{
+	display:flex;
+	justify-content:space-between;
+	align-items:baseline;
+	flex-wrap:wrap;
+	gap:8px;
+	margin-bottom:2px;
+}
+
+.exp-role{
+	margin:0;
+}
+
+.exp-date{
+	font-family:'Roboto Mono', monospace;
+	font-size:13px;
+	color:#17a2b8;
+	white-space:nowrap;
+}
+
+.exp-company{
+	font-style:italic;
+	margin-top:0;
+	margin-bottom:12px;
+}
+
+.exp-item ul{
+	margin:0 0 12px;
+	padding-left:20px;
+}
+
+.exp-item li{
+	margin-bottom:8px;
+	font-size:14px;
+}
+
+.env-line{
+	font-size:12px;
+	border-top:1px dashed var(--borderColor);
+	padding-top:10px;
+	margin-bottom:0;
+}
+
+/* ---- Technical Stack ---- */
+.stack-grid{
+	display:grid;
+	grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+	gap:15px;
+}
+
+.stack-card{
+	border:1px solid var(--borderColor);
+	border-radius:5px;
+	padding:15px 18px;
+	background-color: var(--secondaryColor);
+}
+
+.stack-card h6{
+	margin:0 0 10px;
+	color:#17a2b8;
+}
+
+.stack-tags{
+	display:flex;
+	flex-wrap:wrap;
+	gap:6px;
+}
+
+.stack-tag{
+	font-size:12px;
+	padding:4px 9px;
+	border-radius:4px;
+	border:1px solid var(--borderColor);
+	background-color: var(--previewShadow);
+}
+
+/* ---- AI-Assisted Development ---- */
+.ai-section p{
+	max-width:800px;
+	margin:0 auto 20px;
+	text-align:center;
+}
+
+.ai-section ul{
+	max-width:800px;
+	margin:0 auto;
+	padding-left:20px;
+}
+
+.ai-section li{
+	margin-bottom:10px;
+	font-size:14px;
+}
+
+@media screen and (max-width: 800px){
+	.exp-head{
+		flex-direction: column;
+	}
+}
+
 
 
